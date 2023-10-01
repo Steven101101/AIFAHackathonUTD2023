@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="/css/SS.png">
+    <script src="/js/index.js" defer></script>
+    <title>Senior Support</title>
+</head>
+<body>
+    <br>
+    <header>
+        <img src="/css/SS.png">
+        <h1>Senior Support</h1>
+    </header>
+    <br>
+    <div class="form-container">
+        <form id="taskRequest" method="post" action="/taskformsubmit">
+            <input placeholder="First Name" id="fnameInput" name="fname" required>
+            <input placeholder="Last Name" id="lnameInput" name="lname" required>
+            <input placeholder="Age" id="ageInput" name="age" required>
+            <hr>
+            <input placeholder="City" id="cityInput" name="city" required>
+            <input placeholder="State" id="stateInput" name="state" required>
+            <hr>
+            <textarea placeholder="Task" id="taskInput" name="task" required></textarea>
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+        <button id="suggestBtn">Suggest Activities</button>
+    </div>
+    <div class="modal-container">
+        <dialog id="activitiesModal">
+            <button id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+            <h1>AI Suggested Activities</h1>
+            <h2 id="ageActivityMessage"></h1>
+            <ul id="activitiesList"></ul>
+        </dialog>
+    </div>
+</body>
+</html>
