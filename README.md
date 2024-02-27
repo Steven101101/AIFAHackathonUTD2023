@@ -19,4 +19,4 @@ What's next for Senior Support: In the future, our goal is to continuously impro
 
 ## Built With:
 
-[![My Skills](https://skillicons.dev/icons?i=js,html,css,nodejs,express,ai)]
+![My Skills](https://skillicons.dev/icons?i=js,html,css,nodejs,express,ai)
